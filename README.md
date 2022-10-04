@@ -1,0 +1,1 @@
+# Ginseng Plugin Core
