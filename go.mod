@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/gin-contrib/cors v1.4.0
+	github.com/gin-contrib/static v0.0.1
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-ginseng/ginseng v1.4.2
 	github.com/go-ginseng/sql v1.3.0
