@@ -7,6 +7,7 @@ require (
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-ginseng/ginseng v1.4.2
 	github.com/go-ginseng/sql v1.3.0
+	github.com/tkrajina/typescriptify-golang-structs v0.1.8
 	github.com/ulule/limiter/v3 v3.10.0
 	gorm.io/gorm v1.23.10
 )
@@ -26,6 +27,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.5 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/tkrajina/go-reflector v0.5.5 // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
 	golang.org/x/crypto v0.0.0-20220926161630-eccd6366d1be // indirect
 	golang.org/x/net v0.0.0-20221002022538-bcab6841153b // indirect
