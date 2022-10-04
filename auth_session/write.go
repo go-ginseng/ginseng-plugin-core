@@ -2,12 +2,10 @@ package auth_session
 
 import (
 	"time"
-
-	"github.com/go-ginseng/ginseng-plugin-core/sql_mem"
 )
 
 func DeleteExpiredSession() error {
-	return sql_mem.MEM.Delete(&SessionTable{}, "expired_at < ?", time.Now().Unix()).Error
+	return db.Delete(&SessionTable{}, "expired_at < ?", time.Now().Unix()).Error
 }
 
 func CreateSession(sessionID string, duration int64, data map[string]interface{}) (*Session, error) {
@@ -21,7 +19,7 @@ func CreateSession(sessionID string, duration int64, data map[string]interface{}
 		},
 		Data: data,
 	}
-	err := sql_mem.MEM.Create(&SessionTable{
+	err := db.Create(&SessionTable{
 		BaseSession: BaseSession{
 			SessionID: s.SessionID,
 			CreatedAt: s.CreatedAt,

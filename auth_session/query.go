@@ -4,7 +4,6 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-ginseng/ginseng-plugin-core/sql_mem"
 )
 
 func CurrentSession(ctx *gin.Context) *Session {
@@ -24,7 +23,7 @@ func CurrentSession(ctx *gin.Context) *Session {
 
 func GetSession(sessionID string) (*Session, error) {
 	s := &SessionTable{}
-	err := sql_mem.MEM.First(s, "session_id = ?", sessionID).Error
+	err := db.First(s, "session_id = ?", sessionID).Error
 	if err != nil {
 		return nil, err
 	}
