@@ -1,4 +1,4 @@
-package sql_db
+package sql_mem
 
 import (
 	"github.com/go-ginseng/ginseng"
