@@ -20,4 +20,6 @@ func RegisterHandler(e *ginseng.Engine, option *Config) {
 	mem = option.MEM
 	db.AutoMigrate(&SystemConfig{})
 	mem.AutoMigrate(&SystemConfig{})
+
+	e.AppendPreRunFunc(SyncMem)
 }
