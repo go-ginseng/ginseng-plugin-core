@@ -12,6 +12,10 @@ github.com/go-ginseng/ginseng v1.1.0 h1:QoLefpmKyw0Vaf89ZA4g2cnmJV5qtSdXvIf6HMLj
 github.com/go-ginseng/ginseng v1.1.0/go.mod h1:QY9aPmvGG2lO+1mHkm9Uj3+yc+wWj8FCmldlAOdgPWU=
 github.com/go-ginseng/ginseng v1.3.0 h1:sDjDbL0XOiuoAlIUoe9fx/57mqmSbU/m9W7QIztfELE=
 github.com/go-ginseng/ginseng v1.3.0/go.mod h1:QY9aPmvGG2lO+1mHkm9Uj3+yc+wWj8FCmldlAOdgPWU=
+github.com/go-ginseng/ginseng v1.4.1 h1:GjHEokaUaW52VhFxEZ3naRGk3+Q9ylS6QhdUNXe8e8I=
+github.com/go-ginseng/ginseng v1.4.1/go.mod h1:QY9aPmvGG2lO+1mHkm9Uj3+yc+wWj8FCmldlAOdgPWU=
+github.com/go-ginseng/ginseng v1.4.2 h1:ckjGb7e0LRD6/5lLst1O0NpfIhs88kxefmYyMA1JyHQ=
+github.com/go-ginseng/ginseng v1.4.2/go.mod h1:QY9aPmvGG2lO+1mHkm9Uj3+yc+wWj8FCmldlAOdgPWU=
 github.com/go-playground/assert/v2 v2.0.1 h1:MsBgLAaY856+nPRTKrp3/OZK38U/wa0CcBYNjji3q3A=
 github.com/go-playground/assert/v2 v2.0.1/go.mod h1:VDjEfimB/XKnb+ZQfWdccd7VUvScMdVu0Titje2rxJ4=
 github.com/go-playground/locales v0.14.0 h1:u50s323jtVGugKlcYeyzC0etD1HifMjqmJqb8WugfUU=
