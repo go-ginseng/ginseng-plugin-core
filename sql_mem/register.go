@@ -7,12 +7,12 @@ import (
 
 const PluginID = "01f351c9-2908-4b37-9e8f-4f4d7df47138"
 
-var DB *gorm.DB
+var MEM *gorm.DB
 
 type Option struct {
-	DB *gorm.DB
+	MEM *gorm.DB
 }
 
 func RegisterHandler(e *ginseng.Engine, option *Option) {
-	DB = option.DB
+	MEM = option.MEM
 }
