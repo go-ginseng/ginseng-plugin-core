@@ -16,5 +16,6 @@ var db *gorm.DB
 
 func RegisterHandler(e *ginseng.Engine, option *Option) {
 	db = option.DB
+	db.AutoMigrate(&SessionTable{})
 	e.Gin().Use(buildSecurityMiddleware(e, option.SecurityHandlers))
 }
