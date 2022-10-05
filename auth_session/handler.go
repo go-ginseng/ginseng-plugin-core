@@ -48,6 +48,15 @@ func SkipLoggedInPathHandler(e *ginseng.Engine, ctx *gin.Context) int {
 	return 0
 }
 
+func RefreshSessionHandler(e *ginseng.Engine, ctx *gin.Context) int {
+	s := CurrentSession(ctx)
+	if s != nil {
+		s.Refresh()
+		db.Save(s)
+	}
+	return 0
+}
+
 func buildSecurityMiddleware(e *ginseng.Engine, additionalHandlers []SecurityHandler) gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		for _, handler := range additionalHandlers {
